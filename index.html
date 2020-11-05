@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!--added title css and ... -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -11,6 +12,8 @@
 
 <body>
     <div class="wrapper">
+
+        <!--adding header element-->
         <header>
             <h1>Password Generator</h1>
         </header>
@@ -19,6 +22,12 @@
                 <h2>Generate a Password</h2>
             </div>
             <div class="card-body">
+                <!--adding slider bar, user can change password length-->
+                <div class="slidecontainer">
+                    <input type="range" class="slider" id="range_id" min="6" max="30" step="1">
+                </div>
+                <!--password minimum  lentgh can be 6-->
+                <p><span id="value">Length: min 6</span> </p>
                 <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
             </div>
             <div class="card-footer">
